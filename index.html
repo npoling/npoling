@@ -4,10 +4,11 @@
     <title>Nick Poling - Markets Nerd &amp; Tech Geek</title>
     <link rel="stylesheet" href="css/materialize.min.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
   </head>
 <body>
 
-  <nav class="deep-orange accent-3">
+  <nav class="orange darken-4">
     <ul class="left">
       <li>nick poling</li>
     </ul>
@@ -17,7 +18,7 @@
       <li><a href="#!">Contact</a></li>
     </ul>
 
-    <ul id="slide-out" class="side-nav">
+    <ul id="slide-out" class="side-nav orange lighten-3">
       <li><a href="#!">About</a></li>
       <li><a href="#!">Blog</a></li>
       <li><a href="#!">Contact</a></li>
@@ -26,26 +27,26 @@
     <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
   </nav>
 
-  <div class="parallax-container">
+  <!--<div class="parallax-container">
     <div class="parallax"><img src="assets/soco.jpg"></div>
-  </div>
+  </div>-->
+
+  <div class="chart-container col s12" onclick="transition()"></div>
+
+
           
 
-
+<!--CDN LINKS - REPLACE WITH LOCALLY STORED VERSIONS-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="app.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.min.js">
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js">
   </script>
+  
+
 
 </body>
 </html>
-
-<script>
-  
-  $('.parallax').parallax();
-  $(".button-collapse").sideNav();
-  
-</script>
